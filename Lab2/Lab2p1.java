@@ -1,13 +1,13 @@
-/**
- *
- *
- * @author      Soh Jun Jie U1521123B
- * @date        2016/09/01 23:08
- */
-
 import java.util.Scanner;
-import java.lang.*;
 
+/**
+ * Perform numeric manipulation such as multiplication test, divide,
+ * modulus, counting number of digits, extracting digits in a given
+ * number
+ *
+ * @author      Soh Jun Jie
+ * @version     1.0
+ */
 public class Lab2p1 {
 
     private static Scanner sc = new Scanner(System.in);
@@ -75,8 +75,8 @@ public class Lab2p1 {
         int i, x, y, userAns, correctAns, score = 0;
         int minNum = 1, maxNum = 9;
         for(i=0;i<5;i++){
-            x = minNum + (int) (Math.random() * maxNum - minNum);
-            y = minNum + (int) (Math.random() * maxNum - minNum);
+            x = minNum + (int) (Math.random() * maxNum);
+            y = minNum + (int) (Math.random() * maxNum);
             System.out.println("How much is " + x + " times " + y + "?: ");
             userAns = sc.nextInt();
             correctAns = x * y;
@@ -96,7 +96,6 @@ public class Lab2p1 {
     }
 
     public static int modulus(int m, int n){
-        int remainder = 0;
         while((m-=n) >= 0){}
         return m + n;
     }
