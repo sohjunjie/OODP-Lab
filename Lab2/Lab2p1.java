@@ -125,7 +125,6 @@ public class Lab2p1 {
     public static long extractOddDigits(long n){
         int digitPlace = 1;
         long oddDigitsList = 0;
-
         do{
             if((n % 10) % 2 != 0){
                 oddDigitsList = oddDigitsList + digitPlace * (n % 10);
@@ -133,7 +132,10 @@ public class Lab2p1 {
             }
         }while((n/=10) != 0);
 
-        return oddDigitsList;
+        if(oddDigitsList != 0)
+            return oddDigitsList;
+        else
+            return -1;
     }
 
 }
