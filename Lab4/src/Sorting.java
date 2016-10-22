@@ -22,7 +22,7 @@ public class Sorting
 	}
 	//-----------------------------------------------------------------
 	// Sorts the specified array of objects using the insertion
-	// sort algorithm.
+	// sort algorithm. Modified to sort in descending order.
 	//-----------------------------------------------------------------
 	public static void insertionSort (Comparable[] list)
 	{
@@ -30,14 +30,14 @@ public class Sorting
 		{
 			Comparable key = list[index];
 			int position = index;
-			// Shift larger values to the right
-			while (position > 0 && key.compareTo(list[position-1]) < 0)
+			// Shift larger values to the left (this key is larger than compareKey)
+			while (position > 0 && key.compareTo(list[position-1]) > 0)
 			{
 				list[position] = list[position-1];
 				position--;
 			}
-				list[position] = key;
+			list[position] = key;
 		}
 	}
 }
-//
+
