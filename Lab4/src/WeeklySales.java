@@ -18,12 +18,13 @@ public class WeeklySales
 		salesStaff[7] = new SalePerson("Andy", "Adams", 5000);
 		salesStaff[8] = new SalePerson("Jim", "Doe", 2850);
 		salesStaff[9] = new SalePerson("Walt", "Smith", 3000);
-
+		
 		Sorting.insertionSort(salesStaff);
 
 		System.out.println ("\nRanking of Sales for the Week\n");
 
 		for (SalePerson s : salesStaff)
-			System.out.println (s);
+			System.out.println(s);
+			
 	}
 }
