@@ -1,2 +1,2 @@
 # OODP-Lab
-Lab Exercises Solution for OODP
+Lab Exercise Solutions for OODP
